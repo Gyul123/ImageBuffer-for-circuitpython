@@ -15,6 +15,6 @@ display.fill(bgColor)
 
 fb = adafruit_framebuf.FrameBuffer(bytearray('INSERT YOUR BYTEARRY!!!!!!'),DISPLAY_WIDTH, DISPLAY_HEIGHT, buf_format=adafruit_framebuf.MVLSB)
 
-
-display_image.print_buffer(display_image.fb)
+#Passing the display and framebuffer to the function
+display_image.print_buffer(fb, display)
 #Yup thats it...
